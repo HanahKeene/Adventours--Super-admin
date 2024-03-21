@@ -1,0 +1,21 @@
+.travelers, .hotels, .restaurants {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bt.btn-border-underline::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    background-color: var(--accent-color);
+    transition: transform 300ms ease-in-out;
+
+    transform: scaleX(0);
+    }
+    .btn.btn-border-underline:hover::before,
+    .btn.btn-border-underline:focus::before {
+    transform: scaleX(1);
+    }

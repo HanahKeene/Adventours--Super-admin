@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="list">
+        <div class="action-bar">
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="add">
+                <button id="myBtn">ADD</button>
+                    <!-- The __modal -->
+                    <div id="my__modal" class="__modal">
+
+                        <!-- __modal content -->
+                        <div class="__modal-content">
+                        <div class="__modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Add Tourist Attraction</h2>
+                        </div>
+                        <div class="__modal-body">
+                            <input type="text">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+        </div>
+        <table>
+            <th>ID</th>
+            <th>PLACE</th>
+            <th>DESCRIPTION</th>
+            <th>ADDRESS</th>
+            <th>ATTRACTION</th>
+        </table>
+    </div>
+<script>
+// Get the __modal
+var __modal = document.getElementById("my__modal");
+
+// Get the button that opens the __modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the __modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the __modal 
+btn.onclick = function() {
+  __modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the __modal
+    span.onclick = function() {
+    __modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the __modal, close it
+    window.onclick = function(event) {
+    if (event.target == __modal) {
+        __modal.style.display = "none";
+    }
+    }
+    </script>
+
+</body>
+</html>

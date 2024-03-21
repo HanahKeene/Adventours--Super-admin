@@ -1,0 +1,13 @@
+{
+  "name": "super-admin",
+  "version": "1.0.0",
+  "description": "- collaboration ✨",
+  "main": "connection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "git add . && git commit -a -m \"Updated\" && git push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
